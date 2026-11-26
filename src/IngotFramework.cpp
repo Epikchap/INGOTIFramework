@@ -374,7 +374,7 @@ void IN_ClearAllAudio(void)
 
 
 
-void IN_AudioIterate(const unsigned int TimeStepMS)
+void IN_AudioIterate(const unsigned short TimeStepMS)
 {
 	INGOT_SYSTEMCHECK
 	unsigned short OutFreq = 0;
