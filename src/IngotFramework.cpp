@@ -733,13 +733,13 @@ void IN_DrawImage(IN_Image* Sprite, short ScreenX, short ScreenY, uint8_t Render
 }
 
 //draw a rectangle of on or off pixels
-void IN_DrawRect(bool Val, uint8_t Width, uint8_t Height, short PosX, short PosY)
+void IN_DrawRect(bool Val, uint8_t Width, uint8_t Height, uint8_t PosX, uint8_t PosY)
 {
 	INGOT_SYSTEMCHECK
 	
 	for (uint8_t y = 0; y < Height; y++)
 	{
-		for (uint8_t x = 0; x < Height; x++)
+		for (uint8_t x = 0; x < Width; x++)
 		{
 			IN_SetBufferPixel(Val, PosX+x, PosY+y);
 
